@@ -29,7 +29,7 @@ const Navbar = (props) => {
   return (
     <AppBar position="fixed" background= "transparent">
       <Toolbar style={{minHeight: "80px"}}>
-        <Typography variant="h6" className={classes.title} style={{fontSize: "32px",fontWeight: "800"}}>
+        <Typography variant="h6" className={classes.title} style={{fontFamily: "garamond",fontSize: "32px",fontWeight: "800"}}>
         <img src="" width="30px" height="auto"></img>JOB GRID
         </Typography>
         <div style={{marginTop:"20px"}}>
@@ -38,50 +38,50 @@ const Navbar = (props) => {
             <>
               
               <Button color="inherit" onClick={() => handleClick("/home")}>
-              <Typography style={{fontSize:"18px"}}>Home</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Home</Typography>
               </Button>
               <Button color="inherit" onClick={() => handleClick("/addjob")}>
-              <Typography style={{fontSize:"18px"}}>Add Jobs</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Add Jobs</Typography>
               </Button>
               <Button color="inherit" onClick={() => handleClick("/myjobs")}>
-              <Typography style={{fontSize:"18px"}}>Posted</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Posted</Typography>
               </Button>
               <Button color="inherit" onClick={() => handleClick("/employees")}>
-              <Typography style={{fontSize:"18px"}}>Employees</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Employees</Typography>
               </Button>
               <Button color="inherit" onClick={() => handleClick("/profile")}>
-              <Typography style={{fontSize:"18px"}}>Profile</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Profile</Typography>
               </Button>
               <Button color="inherit" onClick={() => handleClick("/logout")}>
-              <Typography style={{fontSize:"18px"}}>Logout</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Logout</Typography>
               </Button>
             </>
           ) : (
             <>
               <Button color="inherit" onClick={() => handleClick("/home")}>
-              <Typography style={{fontSize:"18px"}}>Home</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Home</Typography>
               </Button>
               <Button
                 color="inherit"
                 onClick={() => handleClick("/applications")}
               >
-                <Typography style={{fontSize:"18px"}}>Applied</Typography>
+                <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Applications</Typography>
               </Button>
               <Button color="inherit" onClick={() => handleClick("/profile")}>
-              <Typography style={{fontSize:"18px"}}>Profile</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Profile</Typography>
               </Button>
               <Button color="inherit" onClick={() => handleClick("/logout")}>
-              <Typography style={{fontSize:"18px"}}>Logout</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Logout</Typography>
               </Button>
             </>
           )
         ) : (
           <>
             <Button color="inherit" onClick={() => handleClick("/login")}>
-              <Typography style={{fontSize:"18px"}}>Login</Typography>
+              <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>Login</Typography>
             </Button>
             <Button color="inherit" onClick={() => handleClick("/signup")}>
-            <Typography style={{fontSize:"18px"}}>SignUp</Typography>
+            <Typography style={{fontFamily: "garamond",fontSize:"18px"}}>SignUp</Typography>
             </Button>
           </>
         )}

@@ -16,15 +16,16 @@ import { SetPopupContext } from "../App";
 import apiList from "../lib/apiList";
 import isAuth from "../lib/isAuth";
 
+import img from './sign.jpg';
 const useStyles = makeStyles((theme) => ({
   body: {
-    padding: "60px 60px",
+    padding: "100px 100px",
   },
   inputBox: {
-    width: "400px",
+    width: "500px",
   },
   submitButton: {
-    width: "400px",
+    width: "500px",
   },
 }));
 
@@ -44,7 +45,7 @@ const MultifieldInput = (props) => {
         >
           <Grid item xs={6}>
             <TextField
-              label={`Institution Name #${key + 1}`}
+              label={`Education #${key + 1}`}
               value={education[key].institutionName}
               onChange={(event) => {
                 const newEdu = [...education];
@@ -54,7 +55,7 @@ const MultifieldInput = (props) => {
               variant="outlined"
             />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={7}>
             <TextField
               label="Start Year"
               value={obj.startYear}
@@ -67,7 +68,7 @@ const MultifieldInput = (props) => {
               }}
             />
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={7}>
             <TextField
               label="End Year"
               value={obj.endYear}
@@ -317,14 +318,18 @@ const Signup = (props) => {
     <Paper elevation={3} className={classes.body}>
       <Grid container direction="column" spacing={4} alignItems="center">
         <Grid item>
-          <Typography variant="h3" component="h2" style={{color:"#3f51b5",fontWeight:"bold"}}>
-            Sign up
+          <Typography variant="h3" component="h2" style={{fontFamily: "garamond",color:"#3f51b5",fontWeight:"bold", marginLeft:"40%", height: "100px", marginTop:"-10%"}}>
+              Sign Up
           </Typography>
+          <div style={{alignItems:"center", marginLeft:"0%",marginTop:""}}>
+        <img src={img}
+          width="550px" height="350px" ></img>
+      </div>
         </Grid>
         <Grid item>
           <TextField
             select
-            label="Category"
+            label="Designation"
             variant="outlined"
             className={classes.inputBox}
             value={signupDetails.type}
@@ -332,8 +337,8 @@ const Signup = (props) => {
               handleInput("type", event.target.value);
             }}
           >
-            <MenuItem value="applicant">Applicant</MenuItem>
-            <MenuItem value="recruiter">Recruiter</MenuItem>
+            <MenuItem value="applicant">Employee</MenuItem>
+            <MenuItem value="recruiter">Employer</MenuItem>
           </TextField>
         </Grid>
         <Grid item>
@@ -487,5 +492,3 @@ const Signup = (props) => {
 };
 
 export default Signup;
-
-

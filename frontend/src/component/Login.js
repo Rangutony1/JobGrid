@@ -118,7 +118,7 @@ const Login = (props) => {
       <Grid container direction="column" spacing={4} alignItems="center">
       
         <Grid item>
-          <Typography variant="h3" component="h2" style={{color:"#3f51b5",fontWeight:"bold"}}>
+          <Typography variant="h3" component="h2" style={{fontFamily: "garamond",color:"#3f51b5",fontWeight:"bold"}}>
           Ready for new opportunities?
           </Typography>
         </Grid>
