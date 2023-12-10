@@ -15,17 +15,17 @@ const Welcome = (props) => {
             }}>
 
               <div style={{textAlign: "center",position: "absolute",width: "100%",left: "50%",top: "70%",
-                            transform: "translate(-50%,-50%)",background:"rgba(0, 0, 139, 1)"}}>
+                            transform: "translate(-50%,-50%)",background:"# D3D3D3"}}>
                 <Grid item >
                   <Typography variant="h6" style={{fontFamily: "alberus medium",marginTop: "5px",marginBottom: "5px",fontSize: "18px",
                       textTransform: "uppercase",fontWeight: "800",color: "#ffffff",
-                      letterSpacing: "0.5px"}}>JOB HUNT MADE EASY </Typography>
+                      letterSpacing: "0.5px"}}>WANT TO SAVE SOURCES? </Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant="h2" 
                   style={{fontFamily: "alberus medium",marginTop: "5px",marginBottom:"5px",textTransform: "uppercase",
                   fontWeight: "800",color: "#ffffff",letterSpacing: "1px"}}>
-                    YOUR CAREER JOURNEY BEGINS <em style={{fontStyle: "normal",color: "#ed563b",fontWeight: "900"}}>NOW</em>
+                    JOIN THE CARPOOLING AND MAKE A <em style={{fontStyle: "normal",color: "#FDFD96",fontWeight: "900"}}>CHANGE!</em>
                   </Typography>
                 </Grid>
               </div>

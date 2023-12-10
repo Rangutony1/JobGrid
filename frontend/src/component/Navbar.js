@@ -30,7 +30,7 @@ const Navbar = (props) => {
     <AppBar position="fixed" background= "transparent">
       <Toolbar style={{minHeight: "80px"}}>
         <Typography variant="h6" className={classes.title} style={{fontFamily: "garamond",fontSize: "32px",fontWeight: "800"}}>
-        <img src="" width="30px" height="auto"></img>JOB GRID
+        <img src="" width="30px" height="auto"></img>CAR SHARE
         </Typography>
         <div style={{marginTop:"20px"}}>
         {isAuth() ? (
